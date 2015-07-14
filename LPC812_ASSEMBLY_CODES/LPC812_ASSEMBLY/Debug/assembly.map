@@ -1,0 +1,129 @@
+
+Discarded input sections
+
+ .data          0x00000000        0x0 ./src/startup.o
+ .bss           0x00000000        0x0 ./src/startup.o
+ .isr_vectors   0x00000000       0x44 ./src/startup.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+MFlash16         0x00000000         0x00004000         xr
+RamLoc4          0x10000000         0x00001000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ./src/startup.o
+START GROUP
+LOAD c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a
+LOAD c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libcr_eabihelpers.a
+END GROUP
+                0x00004000                __top_MFlash16 = 0x4000
+                0x10001000                __top_RamLoc4 = 0x10001000
+
+.text           0x00000000       0x24
+ FILL mask 0xff
+                0x00000000                __vectors_start__ = ABSOLUTE (.)
+ *(.isr_vector)
+                0x00000000                . = ALIGN (0x4)
+                0x00000000                __section_table_start = .
+                0x00000000                __data_section_table = .
+                0x00000000        0x4 LONG 0x24 LOADADDR (.data)
+                0x00000004        0x4 LONG 0x10000000 ADDR (.data)
+                0x00000008        0x4 LONG 0x0 SIZEOF (.data)
+                0x0000000c                __data_section_table_end = .
+                0x0000000c                __bss_section_table = .
+                0x0000000c        0x4 LONG 0x10000000 ADDR (.bss)
+                0x00000010        0x4 LONG 0x0 SIZEOF (.bss)
+                0x00000014                __bss_section_table_end = .
+                0x00000014                __section_table_end = .
+ *(.after_vectors*)
+ *(.text*)
+ .text          0x00000014       0x10 ./src/startup.o
+                0x00000014                ResetISR
+ *(.rodata .rodata.* .constdata .constdata.*)
+                0x00000024                . = ALIGN (0x4)
+
+.glue_7         0x00000024        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x00000024        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x00000024        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x00000024        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.iplt           0x00000024        0x0
+ .iplt          0x00000000        0x0 ./src/startup.o
+
+.rel.dyn        0x00000024        0x0
+ .rel.iplt      0x00000000        0x0 ./src/startup.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x00000024                __exidx_start = .
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x00000024                __exidx_end = .
+                0x00000024                _etext = .
+
+.mtb_buffer_default
+ *(.mtb*)
+
+.uninit_RESERVED
+                0x10000000        0x0
+ *(.bss.$RESERVED*)
+                0x10000000                . = ALIGN (0x4)
+                0x10000000                _end_uninit_RESERVED = .
+
+.data           0x10000000        0x0 load address 0x00000024
+ FILL mask 0xff
+                0x10000000                _data = .
+ *(vtable)
+ *(.ramfunc*)
+ *(.data*)
+                0x10000000                . = ALIGN (0x4)
+                0x10000000                _edata = .
+
+.igot.plt       0x10000000        0x0 load address 0x00000024
+ .igot.plt      0x00000000        0x0 ./src/startup.o
+
+.bss            0x10000000        0x0 load address 0x00000024
+                0x10000000                _bss = .
+ *(.bss*)
+ *(COMMON)
+                0x10000000                . = ALIGN (0x4)
+                0x10000000                _ebss = .
+                0x10000000                PROVIDE (end, .)
+
+.noinit         0x10000000        0x0 load address 0x00000024
+                0x10000000                _noinit = .
+ *(.noinit*)
+                0x10000000                . = ALIGN (0x4)
+                0x10000000                _end_noinit = .
+                0x10000000                PROVIDE (_pvHeapStart, DEFINED (__user_heap_base)?__user_heap_base:.)
+                0x10001000                PROVIDE (_vStackTop, DEFINED (__user_stack_top)?__user_stack_top:(__top_RamLoc4 - 0x0))
+OUTPUT(assembly.axf elf32-littlearm)
+
+.ARM.attributes
+                0x00000000       0x21
+ .ARM.attributes
+                0x00000000       0x21 ./src/startup.o
+
+.debug_line     0x00000000       0x45
+ .debug_line    0x00000000       0x45 ./src/startup.o
+
+.debug_info     0x00000000       0x80
+ .debug_info    0x00000000       0x80 ./src/startup.o
+
+.debug_abbrev   0x00000000       0x14
+ .debug_abbrev  0x00000000       0x14 ./src/startup.o
+
+.debug_aranges  0x00000000       0x20
+ .debug_aranges
+                0x00000000       0x20 ./src/startup.o

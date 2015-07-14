@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;assembly&apos; to &apos;LPC812_ASSEMBLY&apos;" description="Rename resource &apos;assembly&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/assembly" name="LPC812_ASSEMBLY" stamp="1436896341900" updateReferences="true"/>
+</session>
