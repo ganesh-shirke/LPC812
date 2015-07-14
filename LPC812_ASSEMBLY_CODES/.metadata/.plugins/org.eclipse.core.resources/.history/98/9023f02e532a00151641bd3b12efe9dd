@@ -41,5 +41,5 @@ SVCall_Handler:
 PendSV_Handler:
 SysTick_Handler:
 		movs    r2,#2
-		nop
-		b NMI_Handler
+        nop
+        b NMI_Handler
