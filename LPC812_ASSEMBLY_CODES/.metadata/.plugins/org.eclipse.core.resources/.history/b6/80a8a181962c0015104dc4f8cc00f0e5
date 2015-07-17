@@ -1,0 +1,10 @@
+	.text
+	.align
+	.global arithmatic
+arithmatic:
+	#simple addition
+	movs    r1,#1
+	movs	r2,#12
+	ADDS	r0, r1, r2
+_loop:
+    b _loop

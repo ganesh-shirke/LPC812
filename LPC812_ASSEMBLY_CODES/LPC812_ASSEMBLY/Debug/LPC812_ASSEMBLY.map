@@ -1,9 +1,10 @@
 
 Discarded input sections
 
+ .data          0x00000000        0x0 ./src/arithmatic.o
+ .bss           0x00000000        0x0 ./src/arithmatic.o
  .data          0x00000000        0x0 ./src/main.o
  .bss           0x00000000        0x0 ./src/main.o
- .isr_vectors   0x00000000       0x44 ./src/main.o
 
 Memory Configuration
 
@@ -14,6 +15,7 @@ RamLoc4          0x10000000         0x00001000         xrw
 
 Linker script and memory map
 
+LOAD ./src/arithmatic.o
 LOAD ./src/main.o
 START GROUP
 LOAD c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a
@@ -22,55 +24,58 @@ END GROUP
                 0x00004000                __top_MFlash16 = 0x4000
                 0x10001000                __top_RamLoc4 = 0x10001000
 
-.text           0x00000000       0x24
+.text           0x00000000       0x7c
  FILL mask 0xff
                 0x00000000                __vectors_start__ = ABSOLUTE (.)
  *(.isr_vector)
-                0x00000000                . = ALIGN (0x4)
-                0x00000000                __section_table_start = .
-                0x00000000                __data_section_table = .
-                0x00000000        0x4 LONG 0x24 LOADADDR (.data)
-                0x00000004        0x4 LONG 0x10000000 ADDR (.data)
-                0x00000008        0x4 LONG 0x0 SIZEOF (.data)
-                0x0000000c                __data_section_table_end = .
-                0x0000000c                __bss_section_table = .
-                0x0000000c        0x4 LONG 0x10000000 ADDR (.bss)
-                0x00000010        0x4 LONG 0x0 SIZEOF (.bss)
-                0x00000014                __bss_section_table_end = .
-                0x00000014                __section_table_end = .
+ .isr_vector    0x00000000       0x44 ./src/main.o
+                0x00000044                . = ALIGN (0x4)
+                0x00000044                __section_table_start = .
+                0x00000044                __data_section_table = .
+                0x00000044        0x4 LONG 0x7c LOADADDR (.data)
+                0x00000048        0x4 LONG 0x10000000 ADDR (.data)
+                0x0000004c        0x4 LONG 0x0 SIZEOF (.data)
+                0x00000050                __data_section_table_end = .
+                0x00000050                __bss_section_table = .
+                0x00000050        0x4 LONG 0x10000000 ADDR (.bss)
+                0x00000054        0x4 LONG 0x0 SIZEOF (.bss)
+                0x00000058                __bss_section_table_end = .
+                0x00000058                __section_table_end = .
  *(.after_vectors*)
  *(.text*)
- .text          0x00000014       0x10 ./src/main.o
-                0x00000014                ResetISR
+ .text          0x00000058       0x14 ./src/arithmatic.o
+                0x00000058                arithmatic
+ .text          0x0000006c       0x10 ./src/main.o
+                0x0000006c                ResetISR
  *(.rodata .rodata.* .constdata .constdata.*)
-                0x00000024                . = ALIGN (0x4)
+                0x0000007c                . = ALIGN (0x4)
 
-.glue_7         0x00000024        0x0
+.glue_7         0x0000007c        0x0
  .glue_7        0x00000000        0x0 linker stubs
 
-.glue_7t        0x00000024        0x0
+.glue_7t        0x0000007c        0x0
  .glue_7t       0x00000000        0x0 linker stubs
 
-.vfp11_veneer   0x00000024        0x0
+.vfp11_veneer   0x0000007c        0x0
  .vfp11_veneer  0x00000000        0x0 linker stubs
 
-.v4_bx          0x00000024        0x0
+.v4_bx          0x0000007c        0x0
  .v4_bx         0x00000000        0x0 linker stubs
 
-.iplt           0x00000024        0x0
- .iplt          0x00000000        0x0 ./src/main.o
+.iplt           0x0000007c        0x0
+ .iplt          0x00000000        0x0 ./src/arithmatic.o
 
-.rel.dyn        0x00000024        0x0
- .rel.iplt      0x00000000        0x0 ./src/main.o
+.rel.dyn        0x0000007c        0x0
+ .rel.iplt      0x00000000        0x0 ./src/arithmatic.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x00000024                __exidx_start = .
+                0x0000007c                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x00000024                __exidx_end = .
-                0x00000024                _etext = .
+                0x0000007c                __exidx_end = .
+                0x0000007c                _etext = .
 
 .mtb_buffer_default
  *(.mtb*)
@@ -81,7 +86,7 @@ END GROUP
                 0x10000000                . = ALIGN (0x4)
                 0x10000000                _end_uninit_RESERVED = .
 
-.data           0x10000000        0x0 load address 0x00000024
+.data           0x10000000        0x0 load address 0x0000007c
  FILL mask 0xff
                 0x10000000                _data = .
  *(vtable)
@@ -90,10 +95,10 @@ END GROUP
                 0x10000000                . = ALIGN (0x4)
                 0x10000000                _edata = .
 
-.igot.plt       0x10000000        0x0 load address 0x00000024
- .igot.plt      0x00000000        0x0 ./src/main.o
+.igot.plt       0x10000000        0x0 load address 0x0000007c
+ .igot.plt      0x00000000        0x0 ./src/arithmatic.o
 
-.bss            0x10000000        0x0 load address 0x00000024
+.bss            0x10000000        0x0 load address 0x0000007c
                 0x10000000                _bss = .
  *(.bss*)
  *(COMMON)
@@ -101,7 +106,7 @@ END GROUP
                 0x10000000                _ebss = .
                 0x10000000                PROVIDE (end, .)
 
-.noinit         0x10000000        0x0 load address 0x00000024
+.noinit         0x10000000        0x0 load address 0x0000007c
                 0x10000000                _noinit = .
  *(.noinit*)
                 0x10000000                . = ALIGN (0x4)
@@ -113,17 +118,24 @@ OUTPUT(LPC812_ASSEMBLY.axf elf32-littlearm)
 .ARM.attributes
                 0x00000000       0x21
  .ARM.attributes
-                0x00000000       0x21 ./src/main.o
+                0x00000000       0x21 ./src/arithmatic.o
+ .ARM.attributes
+                0x00000021       0x21 ./src/main.o
 
-.debug_line     0x00000000       0x44
- .debug_line    0x00000000       0x44 ./src/main.o
+.debug_line     0x00000000       0x90
+ .debug_line    0x00000000       0x4c ./src/arithmatic.o
+ .debug_line    0x0000004c       0x44 ./src/main.o
 
-.debug_info     0x00000000       0x92
- .debug_info    0x00000000       0x92 ./src/main.o
+.debug_info     0x00000000      0x10a
+ .debug_info    0x00000000       0x88 ./src/arithmatic.o
+ .debug_info    0x00000088       0x82 ./src/main.o
 
-.debug_abbrev   0x00000000       0x14
- .debug_abbrev  0x00000000       0x14 ./src/main.o
+.debug_abbrev   0x00000000       0x28
+ .debug_abbrev  0x00000000       0x14 ./src/arithmatic.o
+ .debug_abbrev  0x00000014       0x14 ./src/main.o
 
-.debug_aranges  0x00000000       0x20
+.debug_aranges  0x00000000       0x40
  .debug_aranges
-                0x00000000       0x20 ./src/main.o
+                0x00000000       0x20 ./src/arithmatic.o
+ .debug_aranges
+                0x00000020       0x20 ./src/main.o

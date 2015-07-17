@@ -300,3 +300,80 @@ Command-line arguments:  -os win32 -ws win32 -arch x86
 
 !ENTRY org.eclipse.ui 4 4 2015-07-14 23:36:54.951
 !MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+!SESSION 2015-07-17 20:17:55.399 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_71
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_IN
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data C:\Users\pc-hp\Documents\LPC812\LPC812_ASSEMBLY_CODES
+
+!ENTRY org.eclipse.ui 4 4 2015-07-17 20:18:01.418
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-07-17 20:18:03.566
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-07-17 20:18:05.681
+!MESSAGE Plugin org.eclipse.cdt.ui, extension org.eclipse.ui.decorators, id org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator: Duplicate id found: org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator
+
+!ENTRY org.eclipse.ui 4 4 2015-07-17 20:18:05.697
+!MESSAGE Plugin org.eclipse.cdt.ui, extension org.eclipse.ui.decorators, id org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator: Unknown extension tag found: decorator
+
+!ENTRY org.eclipse.ui 4 4 2015-07-17 20:18:07.614
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-07-17 20:18:08.083
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-07-17 20:18:09.810
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-07-17 20:18:21.053
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-07-17 20:18:26.476
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-07-17 20:20:10.078
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-07-17 20:29:09.079
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-07-17 20:30:00.194
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-07-17 20:33:09.934
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY com.crt.log 1 0 2015-07-17 20:46:19.751
+!MESSAGE Drivers loaded in 36681 milliseconds
+
+!ENTRY com.crt.debugcommon 4 -1 2015-07-17 20:46:19.899
+!MESSAGE Error received while booting LPC-Link (WinUSB) or RDB-Link:
+Timeout waiting for LPC-Link (WinUSB) or RDB-Link to initialize (2).
+
+
+!ENTRY org.eclipse.ui 4 4 2015-07-17 20:46:53.892
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-07-17 20:46:57.132
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-07-17 20:46:57.272
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-07-17 20:49:45.574
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-07-17 20:51:13.030
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-07-17 20:51:13.154
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-07-17 20:54:14.534
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-07-17 21:50:40.090
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}

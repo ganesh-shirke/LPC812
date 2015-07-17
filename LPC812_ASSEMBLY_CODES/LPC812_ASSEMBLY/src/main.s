@@ -1,6 +1,11 @@
+	#declare unified ARM syntax
 	.syntax unified
+
+	#declare thumb instruction set
 	.thumb
-	.section .isr_vectors
+
+	#place vector table at begining of code
+	.section .isr_vector
 
 	.align 2
 
@@ -22,18 +27,19 @@
 	.long SysTick_Handler
 	.long 0
 
-
+#First function being called by CPU on Reset exception
 	.text
 	.align
 	.thumb_func
 	.global ResetISR
 ResetISR:
-	movs    r2,#1
+	# call arithmatic function
+	b arithmatic
 	nop
 _dummy:
     b _dummy
 
-
+#exception handler
 .align
 NMI_Handler:
 HardFault_Handler:

@@ -1,0 +1,13 @@
+	.syntax unified
+	.thumb
+	.text
+	.align
+	.thumb_func
+	.global arithmatic
+arithmatic:
+	#simple addition
+	movs    r1,#1
+	movs	r2,#2
+	adds	r0, r1, r2
+_loop:
+    b _loop

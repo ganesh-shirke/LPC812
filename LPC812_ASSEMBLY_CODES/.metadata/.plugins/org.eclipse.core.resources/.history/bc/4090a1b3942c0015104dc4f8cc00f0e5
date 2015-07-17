@@ -1,0 +1,9 @@
+	.text
+	.align
+	.thumb_func
+	.global main
+main:
+	movs    r2,#1
+	nop
+_loop:
+    b _loop
