@@ -1,0 +1,16 @@
+16:54:17 **** Incremental Build of configuration Debug for project LPC812 ****
+make -r all 
+Building target: LPC812.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\pc-hp\Documents\LPC812\SYSTICK\lpc_chip_8xx\Debug" -Xlinker -Map="LPC812.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "LPC812_Debug.ld" -o "LPC812.axf"  ./src/cr_startup_lpc8xx.o ./src/crp.o ./src/main.o ./src/mtb.o ./src/sysinit.o   -llpc_chip_8xx
+Finished building target: LPC812.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "LPC812.axf"; # arm-none-eabi-objcopy -v -O binary "LPC812.axf" "LPC812.bin" ; # checksum -p LPC812 -d "LPC812.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1988	      0	    256	   2244	    8c4	LPC812.axf
+ 
+
+16:54:18 Build Finished (took 605ms)
+
