@@ -1,9 +1,9 @@
-21:51:24 **** Incremental Build of configuration Debug for project LPC812_ASSEMBLY ****
+10:14:35 **** Incremental Build of configuration Debug for project LPC812_ASSEMBLY ****
 make -r all 
-Building file: ../src/arithmatic.s
+Building file: ../src/logic.s
 Invoking: MCU Assembler
-arm-none-eabi-gcc -c -x assembler-with-cpp -DDEBUG -D__CODE_RED -DCORE_M0PLUS -D__LPC8XX__ -D__REDLIB__ -g3 -mcpu=cortex-m0 -mthumb -specs=redlib.specs -o "src/arithmatic.o" "../src/arithmatic.s"
-Finished building: ../src/arithmatic.s
+arm-none-eabi-gcc -c -x assembler-with-cpp -DDEBUG -D__CODE_RED -DCORE_M0PLUS -D__LPC8XX__ -D__REDLIB__ -g3 -mcpu=cortex-m0 -mthumb -specs=redlib.specs -o "src/logic.o" "../src/logic.s"
+Finished building: ../src/logic.s
  
 Building file: ../src/main.s
 Invoking: MCU Assembler
@@ -12,7 +12,7 @@ Finished building: ../src/main.s
  
 Building target: LPC812_ASSEMBLY.axf
 Invoking: MCU Linker
-arm-none-eabi-gcc -nostdlib -Xlinker -Map="LPC812_ASSEMBLY.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "assembly_Debug.ld" -o "LPC812_ASSEMBLY.axf"  ./src/arithmatic.o ./src/main.o   
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="LPC812_ASSEMBLY.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "assembly_Debug.ld" -o "LPC812_ASSEMBLY.axf"  ./src/arithmatic.o ./src/logic.o ./src/main.o   
 Finished building target: LPC812_ASSEMBLY.axf
  
 make --no-print-directory post-build
@@ -22,5 +22,5 @@ arm-none-eabi-size "LPC812_ASSEMBLY.axf"; # arm-none-eabi-objcopy -v -O binary "
     124	      0	      0	    124	     7c	LPC812_ASSEMBLY.axf
  
 
-21:51:25 Build Finished (took 1s.133ms)
+10:14:37 Build Finished (took 1s.481ms)
 

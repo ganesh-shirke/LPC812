@@ -34,7 +34,7 @@
 	.global ResetISR
 ResetISR:
 	# call arithmatic function
-	bl arithmatic
+	b arithmatic
 	nop
 _dummy:
     b _dummy

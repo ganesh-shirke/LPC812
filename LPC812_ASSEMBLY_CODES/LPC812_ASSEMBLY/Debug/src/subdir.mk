@@ -5,10 +5,12 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 S_SRCS += \
 ../src/arithmatic.s \
+../src/logic.s \
 ../src/main.s 
 
 OBJS += \
 ./src/arithmatic.o \
+./src/logic.o \
 ./src/main.o 
 
 

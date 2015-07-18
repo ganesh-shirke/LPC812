@@ -3,6 +3,16 @@ Discarded input sections
 
  .data          0x00000000        0x0 ./src/arithmatic.o
  .bss           0x00000000        0x0 ./src/arithmatic.o
+ .text          0x00000000       0x1c ./src/logic.o
+ .data          0x00000000        0x0 ./src/logic.o
+ .bss           0x00000000        0x0 ./src/logic.o
+ .debug_line    0x00000000       0x4b ./src/logic.o
+ .debug_info    0x00000000       0x83 ./src/logic.o
+ .debug_abbrev  0x00000000       0x14 ./src/logic.o
+ .debug_aranges
+                0x00000000       0x20 ./src/logic.o
+ .ARM.attributes
+                0x00000000       0x21 ./src/logic.o
  .data          0x00000000        0x0 ./src/main.o
  .bss           0x00000000        0x0 ./src/main.o
 
@@ -16,6 +26,7 @@ RamLoc4          0x10000000         0x00001000         xrw
 Linker script and memory map
 
 LOAD ./src/arithmatic.o
+LOAD ./src/logic.o
 LOAD ./src/main.o
 START GROUP
 LOAD c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a
