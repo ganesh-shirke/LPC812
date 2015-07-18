@@ -35,7 +35,9 @@
 ResetISR:
 	# call arithmatic function
 	bl arithmatic
+	# call logic function
 	bl logic
+	# call memory fucntion
 	bl memory
 _dummy:
     b _dummy
