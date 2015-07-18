@@ -1,0 +1,51 @@
+	.syntax unified
+	.thumb
+	.text
+	.align
+	.thumb_func
+	.global memory
+
+memory:
+	ldr R0, =mychar
+	ldr R1, =myshort
+	bx lr
+
+
+#Data Segment declaration
+
+	.align 2
+	mychar:
+	.byte  0x01                 /* An 8-bit variable named mychar */
+
+	.align 2                    /* Align to a 4-byte (2^2) boundary */
+	myshort:
+	.hword 0x0123               /* A 16-bit variable named myshort */
+
+	.align 2                    /* Align to a 4-byte (2^2) boundary */
+	myint:
+	.word  0x01234567           /* A 32-bit variable named myint */
+
+	/***
+	 * STRINGS
+	 * =======
+	 *
+	 * Declare a label called "hellostring" which points to the zero-terminated
+	 * string "Hello World"
+	 ***/
+	hellostring:
+	.string "Hello World"
+
+	/***
+	 * ARRAYS
+	 * =======
+	 *
+	 * Declare "array_initialized" with 10 32-bit words, also declare an
+	 * uninitialized array called "array_uninitialized" with space for 10
+	 * 32-bit words (40 bytes).
+	 ***/
+	.align 2
+	array_initialized:
+	.word 5,3,6,7,2,8,7,1,9,5
+	array_uninitialized:
+	.skip 40
+

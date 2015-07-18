@@ -6,12 +6,14 @@
 S_SRCS += \
 ../src/arithmatic.s \
 ../src/logic.s \
-../src/main.s 
+../src/main.s \
+../src/memory.s 
 
 OBJS += \
 ./src/arithmatic.o \
 ./src/logic.o \
-./src/main.o 
+./src/main.o \
+./src/memory.o 
 
 
 # Each subdirectory must supply rules for building sources it contributes

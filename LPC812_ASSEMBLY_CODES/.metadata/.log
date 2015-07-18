@@ -422,3 +422,171 @@ Command-line arguments:  -os win32 -ws win32 -arch x86
 
 !ENTRY org.eclipse.ui 4 4 2015-07-18 10:14:16.016
 !MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-07-18 11:54:06.828
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-07-18 11:56:28.777
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-07-18 11:56:38.673
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY com.crt.log 1 0 2015-07-18 12:36:03.359
+!MESSAGE Drivers loaded in 8374 milliseconds
+
+!ENTRY org.eclipse.ui 4 4 2015-07-18 12:37:58.367
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-07-18 12:38:38.228
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-07-18 12:38:55.485
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-07-18 12:39:14.966
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.jface 2 0 2015-07-18 12:39:17.872
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-07-18 12:39:17.872
+!MESSAGE A conflict occurred for HOME:
+Binding(HOME,
+	ParameterizedCommand(Command(org.eclipse.cdt.dsf.debug.ui.disassembly.commands.gotoPC,Go to Program Counter,
+		Navigate to current program counter,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@d76079,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.dsf.debug.ui.disassembly.context,,,system)
+Binding(HOME,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.goto.lineStart,Line Start,
+		Go to the start of the line of text,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1fedaa1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.eclipse.ui 4 4 2015-07-18 12:50:30.312
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-07-18 12:50:30.391
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-07-18 12:50:39.446
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-07-18 13:04:24.651
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-07-18 13:05:05.361
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-07-18 13:06:22.221
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-07-18 13:07:19.276
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.core.resources 4 2 2015-07-18 13:08:51.908
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/LPC812_ASSEMBLY/Debug/sources.mk' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+	at org.eclipse.core.internal.resources.File.setContents(File.java:358)
+	at org.eclipse.core.internal.resources.File.setContents(File.java:465)
+	at org.eclipse.cdt.managedbuilder.makegen.gnu.GnuMakefileGenerator.save(GnuMakefileGenerator.java:838)
+	at org.eclipse.cdt.managedbuilder.makegen.gnu.GnuMakefileGenerator.populateSourcesMakefile(GnuMakefileGenerator.java:1167)
+	at org.eclipse.cdt.managedbuilder.makegen.gnu.GnuMakefileGenerator.generateMakefiles(GnuMakefileGenerator.java:676)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:1008)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:873)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:496)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:415)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:305)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2015-07-18 13:08:51.955
+!MESSAGE Resource '/LPC812_ASSEMBLY/Debug/sources.mk' does not exist.
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2015-07-18 13:08:51.955
+!MESSAGE Resource '/LPC812_ASSEMBLY/Debug/sources.mk' does not exist.
+
+!ENTRY org.eclipse.core.resources 4 75 2015-07-18 13:08:52.692
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.eclipse.cdt.managedbuilder.core 4 75 2015-07-18 13:08:52.692
+!MESSAGE Errors running builder 'CDT Builder' on project 'LPC812_ASSEMBLY'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/LPC812_ASSEMBLY/Debug/sources.mk' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+	at org.eclipse.core.internal.resources.File.setContents(File.java:358)
+	at org.eclipse.core.internal.resources.File.setContents(File.java:465)
+	at org.eclipse.cdt.managedbuilder.makegen.gnu.GnuMakefileGenerator.save(GnuMakefileGenerator.java:838)
+	at org.eclipse.cdt.managedbuilder.makegen.gnu.GnuMakefileGenerator.populateSourcesMakefile(GnuMakefileGenerator.java:1167)
+	at org.eclipse.cdt.managedbuilder.makegen.gnu.GnuMakefileGenerator.generateMakefiles(GnuMakefileGenerator.java:676)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:1008)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:873)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:496)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:415)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:305)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 2 org.eclipse.core.resources 4 368 2015-07-18 13:08:52.692
+!MESSAGE Resource '/LPC812_ASSEMBLY/Debug/sources.mk' does not exist.
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2015-07-18 13:08:52.692
+!MESSAGE Resource '/LPC812_ASSEMBLY/Debug/sources.mk' does not exist.
+
+!ENTRY org.eclipse.ui 4 4 2015-07-18 13:09:42.673
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-07-18 13:09:48.650
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-07-18 13:10:05.914
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-07-18 13:14:08.280
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-07-18 13:28:46.691
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-07-18 13:28:46.769
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-07-18 13:28:50.429
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-07-18 13:33:22.734
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-07-18 13:38:18.322
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-07-18 13:38:19.900
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}

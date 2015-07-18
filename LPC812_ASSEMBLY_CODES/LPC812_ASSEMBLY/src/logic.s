@@ -29,7 +29,4 @@ logic:
 	movs	r1,#8
 	lsrs	r2,r1,#2
 
-
-
-_loop:
-    b _loop
+	bx	lr
