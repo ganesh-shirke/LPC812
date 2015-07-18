@@ -6,7 +6,8 @@
 
 	#place vector table at begining of code
 	.section .isr_vector
-
+	
+	;address that is multiple of 2 (expression evaluating to any power of 2: means 2^2)
 	.align 2
 
 	.long _vStackTop
